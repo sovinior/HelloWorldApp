@@ -16,22 +16,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VsT-h9-wcR">
-                                <rect key="frame" x="97.666666666666686" y="599" width="180" height="41"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="PM0-8J-jXr"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Show Greeting">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="greetingButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="CSB-Z1-QSw"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fcC-Jk-Xvs">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="BAq-gt-Gx8">
+                                <rect key="frame" x="97.666666666666686" y="599" width="180" height="102.66666666666663"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VsT-h9-wcR">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="40.333333333333336"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="PM0-8J-jXr"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Show Greeting">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="greetingButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="CSB-Z1-QSw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ulw-HI-c4w">
+                                        <rect key="frame" x="0.0" y="62.333333333333371" width="180" height="40.333333333333343"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="qmT-Ys-H6k"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Do something">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="greetingButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="37h-Ne-PpZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hello, World!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fcC-Jk-Xvs">
                                 <rect key="frame" x="58.333333333333343" y="183" width="258.33333333333326" height="38.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="33"/>
                                 <nil key="textColor"/>
@@ -41,9 +61,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="VsT-h9-wcR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5D0-Kr-yqn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VsT-h9-wcR" secondAttribute="bottom" constant="138" id="NHK-Ii-G2V"/>
-                            <constraint firstItem="fcC-Jk-Xvs" firstAttribute="centerX" secondItem="VsT-h9-wcR" secondAttribute="centerX" id="cRy-DC-MhM"/>
+                            <constraint firstItem="BAq-gt-Gx8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ddh-7p-OX9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BAq-gt-Gx8" secondAttribute="bottom" constant="76.333333333333371" id="Gp9-94-Wcv"/>
                             <constraint firstItem="fcC-Jk-Xvs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="139" id="tkr-Dv-4aE"/>
                         </constraints>
                     </view>
