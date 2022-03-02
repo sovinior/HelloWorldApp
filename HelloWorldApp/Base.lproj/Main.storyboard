@@ -27,6 +27,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="greetingButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="CSB-Z1-QSw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fcC-Jk-Xvs">
                                 <rect key="frame" x="58.333333333333343" y="183" width="258.33333333333326" height="38.666666666666657"/>
@@ -44,6 +47,10 @@
                             <constraint firstItem="fcC-Jk-Xvs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="139" id="tkr-Dv-4aE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greetingButton" destination="VsT-h9-wcR" id="vBc-wf-lay"/>
+                        <outlet property="greetingLabel" destination="fcC-Jk-Xvs" id="XfI-27-lmi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
